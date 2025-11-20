@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berry Bloms - Arándanos Rojos Deshidratados con Yogur Griego</title>
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="./img/logo.png" alt="Berry Bloms" id="berryBlomsLogo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Características</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#shop">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#samples">Muestras</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="cart-icon-wrapper" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="bi bi-cart3" style="font-size: 1.5rem; color: var(--text);"></i>
+                            <span class="cart-badge" id="cartBadge">0</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" id="scrollIndicator"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 slide-in-left">
+                    <h1 style="font-size: 3.5rem; line-height: 1.2; margin-bottom: 1rem;">
+                        <span style="color: var(--highlight);">El Snack Perfecto</span><br>
+                        <span style="font-size: 2.5rem;">Arándanos con Yogur Griego</span>
+                    </h1>
+                    <p class="lead" style="font-size: 1.3rem; font-weight: 500;">Deliciosos arándanos rojos deshidratados cubiertos con yogur griego y rellenos de crema de frutos rojos. <strong style="color: var(--highlight);">Salud y sabor en cada bocado.</strong></p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="#shop" class="btn btn-primary">Comprar Ahora</a>
+                        <a href="#about" class="btn btn-outline-primary">Saber Más</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0 slide-in-right">
+                    <video src="./gif/producto-gif.mp4" loop autoplay muted style="border-radius: 12px; width: 100%; height: auto;"></video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Acerca de Berry Bloms</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="card fade-in stagger-1">
+                        <h3 class="card-title">Nuestra Historia</h3>
+                        <p class="card-text">Berry Bloms combina la bondad natural de los arándanos rojos deshidratados con la riqueza cremosa del yogur griego, todo realzado con un delicioso relleno de crema de frutos rojos. Cada bocado es una armonía perfecta de textura y sabor.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card fade-in stagger-2">
+                        <h3 class="card-title">Por Qué Elegirnos</h3>
+                        <p class="card-text">Elaborado con ingredientes premium, Berry Bloms ofrece una experiencia de snacking única que es nutritiva y deliciosa. Perfecto para momentos sobre la marcha o como un bocadillo saludable en cualquier momento del día.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="section section-light">
+        <div class="container">
+            <h2 class="section-title fade-in">Por Qué Te Encantará Berry Bloms</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card text-center fade-in stagger-1">
+                        <div class="icon-wrapper">
+                            <i class="bi bi-heart-pulse-fill"></i>
+                        </div>
+                        <h3 class="card-title">Saludable y Nutritivo</h3>
+                        <p class="card-text">Lleno de antioxidantes y bondad natural de arándanos reales y yogur griego.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center fade-in stagger-2">
+                        <div class="icon-wrapper">
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h3 class="card-title">Calidad Premium</h3>
+                        <p class="card-text">Elaborado con los mejores ingredientes, garantizando que cada bocado sea una experiencia deliciosa.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center fade-in stagger-3">
+                        <div class="icon-wrapper">
+                            <i class="bi bi-bag-check-fill"></i>
+                        </div>
+                        <h3 class="card-title">Snacking Conveniente</h3>
+                        <p class="card-text">Perfecto para estilos de vida ocupados - toma y lleva, sin necesidad de preparación.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="section mb-section">
+        <div class="container">
+            <h2 class="section-title fade-in">¡Consigue Tu Snack Favorito!</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card scale-in">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="product-image" style="height: 100%; min-height: 400px;">
+                                    <img src="./img/producto-empacado.png" 
+                                         alt="Berry Bloms - Arándanos Rojos Deshidratados con Yogur Griego" 
+                                         style="width: 100%; height: 100%; object-fit: cover; border-radius: 16px;">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-center text-md-start">
+                                    <h3 class="card-title mb-3" style="font-size: 2rem;">Arándanos Premium con Yogur Griego</h3>
+                                    <p class="card-text mb-4" style="font-size: 1.1rem;">Experimenta la combinación perfecta de arándanos deshidratados, yogur griego y crema de frutos rojos. <strong style="color: var(--highlight);">El snack saludable que estabas buscando.</strong></p>
+                                    <div class="mb-4">
+                                        <span class="cart-item-price" style="font-size: 2rem; display: block; margin-bottom: 1rem;">$8.000</span>
+                                    </div>
+                                    <ul class="feature-list text-start mb-4">
+                                        <li>100% Ingredientes Naturales</li>
+                                        <li>Rico en Antioxidantes</li>
+                                        <li>Sin Conservantes Artificiales</li>
+                                        <li>Perfecto para Cualquier Ocasión</li>
+                                    </ul>
+                                    <div class="mb-3 p-3" style="background-color: var(--accent); border-radius: 12px; border-left: 4px solid var(--highlight);">
+                                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                                            <i class="bi bi-truck" style="color: var(--highlight); font-size: 1.2rem;"></i>
+                                            <strong style="color: var(--text);">Envío Gratis</strong>
+                                        </div>
+                                        <p style="font-size: 0.9rem; color: var(--text); opacity: 0.9; margin: 0;">
+                                            En compras mayores a <strong>$50.000</strong> el envío es gratis. 
+                                            <br>Compras menores a $50.000 tienen un costo de envío de $10.000
+                                        </p>
+                                    </div>
+                                    <button class="btn btn-add-to-cart" id="addToCartBtn" onclick="addToCart()">
+                                        <i class="bi bi-cart-plus me-2"></i>Agregar al Carrito
+                                    </button>
+                                    <p class="text-muted mt-2" style="font-size: 0.9rem; opacity: 0.7;">
+                                        <i class="bi bi-info-circle me-1"></i>Haz clic varias veces para agregar más unidades
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Samples Section -->
+    <!-- Reviews Section -->
+    <section id="reviews" class="section">
+        <div class="container">
+            <h2 class="section-title fade-in">Reseñas de Consumidores</h2>
+            <div class="row g-4 mt-3">
+                <div class="col-md-4">
+                    <div class="card review-card fade-in stagger-1 p-3">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="review-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Laura" loading="lazy">
+                            </div>
+                            <div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <strong>Laura A.</strong>
+                                    <div class="review-stars"> 
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                                <p class="mb-0 mt-2">Deliciosos y perfectos como snack. Me encantó la textura y el toque de crema de frutos rojos.</p>
+                                <small class="text-muted">Hace 2 semanas</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card review-card fade-in stagger-2 p-3">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="review-avatar">
+                                <img src="https://randomuser.me/api/portraits/men/93.jpg" alt="Juan David" loading="lazy">
+                            </div>
+                            <div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <strong>Juan David G.</strong>
+                                    <div class="review-stars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                                <p class="mb-0 mt-2">Gran balance entre dulce y ácido. Ideal para llevar al trabajo.</p>
+                                <small class="text-muted">Hace 1 mes</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card review-card fade-in stagger-3 p-3">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="review-avatar">
+                                <img src="https://randomuser.me/api/portraits/women/17.jpg" alt="Maye" loading="lazy">
+                            </div>
+                            <div>
+                                <div class="d-flex align-items-center gap-2">
+                                    <strong>Maye R.</strong>
+                                    <div class="review-stars">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                                <p class="mb-0 mt-2">Textura increíble y el yogur no empalaga. Lo recomiendo para toda la familia.</p>
+                                <small class="text-muted">Hace 3 días</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="samples" class="section section-light">
+        <div class="container">
+            <h2 class="section-title fade-in">Muestras y Degustaciones para Tiendas</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="card fade-in">
+                        <div class="text-center mb-4">
+                            <h3 class="card-title mb-3">¿Eres una Tienda o Empresa?</h3>
+                            <p class="card-text">
+                                Ofrecemos muestras y degustaciones para tiendas y empresas interesadas en distribuir Berry Bloms. 
+                                Contáctanos y nuestro equipo se pondrá en contacto contigo para coordinar una degustación o envío de muestras.
+                            </p>
+                        </div>
+                        <form id="samplesForm" class="mt-4">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="companyName" class="form-label">Nombre de la Empresa *</label>
+                                    <input type="text" class="form-control" id="companyName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="contactPerson" class="form-label">Persona de Contacto *</label>
+                                    <input type="text" class="form-control" id="contactPerson" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="contactEmail" class="form-label">Correo Electrónico *</label>
+                                    <input type="email" class="form-control" id="contactEmail" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="contactPhone" class="form-label">Teléfono *</label>
+                                    <input type="tel" class="form-control" id="contactPhone" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="contactMessage" class="form-label">Mensaje</label>
+                                    <textarea class="form-control" id="contactMessage" rows="4" placeholder="Cuéntanos sobre tu tienda o empresa y cómo podemos ayudarte..."></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">
+                                        <i class="bi bi-send me-2"></i>Enviar Solicitud
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Berry Bloms</h5>
+                    <p>Deliciosos arándanos deshidratados con yogur griego y crema de frutos rojos.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5>Enlaces Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#home">Inicio</a></li>
+                        <li><a href="#about">Acerca de</a></li>
+                        <li><a href="#features">Características</a></li>
+                        <li><a href="#shop">Tienda</a></li>
+                        <li><a href="#samples">Muestras</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <p>¡Síguenos para actualizaciones y ofertas especiales!</p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-decoration-none"><i class="bi bi-facebook" style="font-size: 1.5rem; color: var(--highlight);"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="bi bi-instagram" style="font-size: 1.5rem; color: var(--highlight);"></i></a>
+                        <a href="#" class="text-decoration-none"><i class="bi bi-twitter" style="font-size: 1.5rem; color: var(--highlight);"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p class="mb-0" style="color: var(--text); opacity: 0.7;">&copy; 2024 Berry Bloms. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="modal fade cart-modal" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">
+                        <i class="bi bi-cart3 me-2"></i>Mi Carrito
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body" id="cartBody">
+                    <!-- Cart items will be dynamically inserted here -->
+                </div>
+                <div class="modal-footer">
+                    <div class="w-100">
+                        <div id="cartBreakdown" style="display: none;">
+                            <div class="d-flex justify-content-between align-items-center mb-2" style="font-size: 0.95rem; color: var(--text); opacity: 0.8;">
+                                <span>Subtotal:</span>
+                                <span id="cartSubtotal">$0</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-2" style="font-size: 0.95rem; color: var(--text); opacity: 0.8;">
+                                <span>IVA (19%):</span>
+                                <span id="cartIVA">$0</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center mb-3" style="font-size: 0.95rem; color: var(--text); opacity: 0.8;">
+                                <span>Envío:</span>
+                                <span id="cartShipping">$0</span>
+                            </div>
+                        </div>
+                        <div class="cart-total d-flex justify-content-between align-items-center" style="border-top: 2px solid var(--accent); padding-top: 1rem;">
+                            <span style="font-size: 1.2rem; font-weight: 600; color: var(--text);">Total:</span>
+                            <span class="cart-total-amount" id="cartTotal" style="font-size: 1.5rem; font-weight: 700; color: var(--highlight);">$0</span>
+                        </div>
+                        <div class="d-flex gap-2 mt-3">
+                            <button type="button" class="btn btn-outline-primary flex-fill" data-bs-dismiss="modal">Seguir Comprando</button>
+                            <button type="button" class="btn btn-primary flex-fill" id="checkoutBtn" onclick="proceedToCheckout()">Finalizar Compra</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Scroll animations and scroll indicator
+        (function() {
+            // Scroll indicator
+            function updateScrollIndicator() {
+                const scrollIndicator = document.getElementById('scrollIndicator');
+                if (scrollIndicator) {
+                    const windowHeight = window.innerHeight;
+                    const documentHeight = document.documentElement.scrollHeight;
+                    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+                    const scrollPercentage = (scrollTop / (documentHeight - windowHeight)) * 100;
+                    scrollIndicator.style.width = scrollPercentage + '%';
+                }
+            }
+
+            // Intersection Observer for scroll animations
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        // Optional: stop observing after animation
+                        // observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all elements with animation classes
+            function initScrollAnimations() {
+                const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right, .scale-in');
+                animatedElements.forEach((el, index) => {
+                    // Add initial visible class for hero section elements
+                    if (el.closest('#home')) {
+                        setTimeout(() => {
+                            el.classList.add('visible');
+                        }, index * 100);
+                    } else {
+                        observer.observe(el);
+                    }
+                });
+            }
+
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    const href = this.getAttribute('href');
+                    if (href !== '#' && href.length > 1) {
+                        e.preventDefault();
+                        const target = document.querySelector(href);
+                        if (target) {
+                            const offsetTop = target.offsetTop - 80; // Account for fixed navbar
+                            window.scrollTo({
+                                top: offsetTop,
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+
+            // Update scroll indicator on scroll
+            let scrollTimeout;
+            window.addEventListener('scroll', function() {
+                updateScrollIndicator();
+                
+                // Throttle scroll events
+                clearTimeout(scrollTimeout);
+                scrollTimeout = setTimeout(updateScrollIndicator, 10);
+            }, { passive: true });
+
+            // Initialize on page load
+            document.addEventListener('DOMContentLoaded', function() {
+                initScrollAnimations();
+                updateScrollIndicator();
+                
+                // Trigger initial animations for hero section
+                setTimeout(() => {
+                    const heroElements = document.querySelectorAll('#home .slide-in-left, #home .slide-in-right, #home .scale-in');
+                    heroElements.forEach((el, index) => {
+                        setTimeout(() => {
+                            el.classList.add('visible');
+                        }, index * 200);
+                    });
+                }, 100);
+            });
+
+            // Re-initialize animations when window is resized
+            window.addEventListener('resize', function() {
+                updateScrollIndicator();
+            });
+        })();
+    </script>
+</body>
+</html>
+
