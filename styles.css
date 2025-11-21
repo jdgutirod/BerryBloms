@@ -234,6 +234,11 @@ body {
     object-fit: contain;
 }
 
+.carousel-style {
+    height: 100%; 
+    min-height: 450px;
+}
+
 /* Feature List */
 .feature-list {
     list-style: none;
@@ -714,3 +719,68 @@ body {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* Additional media thumbnails below carousel */
+.additional-media .media-thumb {
+    width: 72px;
+    height: 72px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: var(--surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--accent);
+}
+.additional-media .media-thumb img,
+.additional-media .media-thumb video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.additional-media .media-thumb.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.75rem;
+    color: var(--highlight);
+    background: linear-gradient(135deg, rgba(179,156,176,0.06), rgba(179,156,176,0.02));
+}
+
+/* Nutrition card tweaks */
+.nutrition-card {
+    background-color: rgba(255,255,255,0.02);
+    border: 1px solid var(--accent);
+    border-radius: 12px;
+}
+
+@media (max-width: 768px) {
+    .additional-media .media-thumb { width: 64px; height: 64px; }
+}
+
+.table {
+    --bs-table-bg: transparent;
+    --bs-table-border-color: var(--accent);
+}
+
+/* Hover zoom for carousel media (desktop only) */
+@media (hover: hover) and (pointer: fine) {
+    .carousel-style, .carousel-item { overflow: hidden; }
+    .carousel-item img, .carousel-item video {
+        transition: transform 300ms cubic-bezier(.2,.9,.2,1);
+        will-change: transform;
+        transform-origin: center center;
+    }
+    .carousel-item:hover img,
+    .carousel-item:hover video {
+        transform: scale(1.12);
+    }
+}
+
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .carousel-item img, .carousel-item video {
+        transition: none !important;
+        transform: none !important;
+    }
+}

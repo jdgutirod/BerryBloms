@@ -5,7 +5,7 @@ let cart = [];
 const product = {
     id: 1,
     name: 'Berry Bloms',
-    price: 8000,
+    price: 14900,
     image: './img/producto.png',
     description: 'Arándanos rojos deshidratados cubiertos con yogur griego y rellenos de una deliciosa crema de frutos rojos.'
 };
